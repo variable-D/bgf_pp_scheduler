@@ -1,0 +1,24 @@
+server:
+    port: 8443
+
+spring:
+  datasource:
+    username: root
+    password: '0000'
+    url: jdbc:mysql://localhost:3306/metadb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+
+joytel:
+  api:
+    customerOrder: "https://api.joytelshop.com/customerApi/customerOrder"
+    couponRedeem: "https://api.joytelshop.com/customerApi/coupon/redeem"
+  customerInfo:
+    customerCode: "10391"
+    customerAuth: "54534AA34A"
+  log:
+    file: "/Users/whwan/Desktop/joytelLogfile/joytel_logfile.JSON"
